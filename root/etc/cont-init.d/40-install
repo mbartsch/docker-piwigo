@@ -18,7 +18,9 @@ fi
 	/config/www/gallery/local/config/config.inc.php
 
 # permissions
-if [ ! -z $RESET_PERMISSIONS ] ; then
+# Only run on initial startup
+if [ ! -e /config/.permissions-step2 ] ; then
   chown -R abc:abc /config
+  touch /config/.permissions-step2
 fi
 
