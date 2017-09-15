@@ -46,6 +46,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for setting timezone information, eg Europe/London
+* `-e RESET_PERMISSIONS` if defined, a chown will be run on /config, disable by default
 
 It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it piwigo /bin/bash`.
 
