@@ -18,6 +18,7 @@ fi
 	/config/www/gallery/local/config/config.inc.php
 
 # permissions
-chown -R abc:abc \
-	/config
+if [ ! -z $RESET_PERMISSIONS ] ; then
+  chown -R abc:abc /config
+fi
 
