@@ -14,6 +14,7 @@ RUN \
 	lynx \
 	php7-apcu \
 	php7-cgi \
+  php7-curl \
 	php7-dom \
 	php7-exif \
 	php7-gd \
