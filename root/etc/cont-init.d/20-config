@@ -25,12 +25,12 @@ sed -i "s#group = nobody.*#group = abc#g" /etc/php7/php-fpm.d/www.conf
 
 
 # permissions
-if [ ! -e /config/.permissions-step1 ] ; then
   chown -R abc:abc \
     /config \
     /run \
     /var/lib/nginx \
     /var/tmp/nginx
+if [ ! -e /config/.permissions-step1 ] ; then
   chmod -R g+w \
     /config/{nginx,www}
   touch /config/.permissions-step1
