@@ -8,13 +8,14 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 
 # install packages
 RUN \
+ apk upgrade --no-cache && \
  apk add --no-cache \
 	curl \
 	imagemagick \
 	lynx \
 	php7-apcu \
 	php7-cgi \
-  php7-curl \
+        php7-curl \
 	php7-dom \
 	php7-exif \
 	php7-gd \
