@@ -25,8 +25,10 @@ RUN \
 	php7-pear \
 	php7-xmlrpc \
 	php7-xsl \
+        php7-exif \
 	re2c \
 	unzip \
+        exiftool \
 	wget
 
 # copy local files
