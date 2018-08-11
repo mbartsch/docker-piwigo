@@ -26,6 +26,7 @@ RUN \
 	php7-xmlrpc \
 	php7-xsl \
         php7-exif \
+        php7-redis \
 	re2c \
 	unzip \
         exiftool \
